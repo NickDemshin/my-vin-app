@@ -33,7 +33,15 @@ export default function Header() {
 
         {isClient && session?.user ? (
           <>
-            
+            {/* Ссылка в «Кабинет» только если мы не на /dashboard */}
+            {pathname !== '/dashboard' && (
+              <Link
+                href={`/dashboard?callbackUrl=${encodeURIComponent(callbackUrl)}`}
+                className="text-blue-600 hover:underline text-sm"
+              >
+                {t('dashboard')}
+              </Link>
+            )}
             <button
               onClick={() => signOut({ callbackUrl: '/' })}
               className="text-red-500 hover:underline text-sm"
@@ -43,7 +51,7 @@ export default function Header() {
           </>
         ) : isClient ? (
           <Link
-             href={`/auth/signin?callbackUrl=${encodeURIComponent('/dashboard')}`}
+            href={`/auth/signin?callbackUrl=${encodeURIComponent('/dashboard')}`}
             className="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 text-sm"
           >
             {t('sign_in')}

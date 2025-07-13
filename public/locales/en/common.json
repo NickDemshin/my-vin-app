@@ -27,5 +27,12 @@
   "title": "Vin-Checker",
   "report_type_info": "Information",
   "report_type_decode": "Decode",
-  "report_type_stolen": "Stolen"
+  "report_type_stolen": "Stolen",
+
+  "faq_q1": "How do I get a VIN report?",
+  "faq_a1": "Enter your VIN on the home page and click “Check VIN.”",
+  "faq_q2": "Do I need to register?",
+  "faq_a2": "You can get a report without registering, but it won’t be saved to your dashboard.",
+  "faq_q3": "How do I download a previously generated report?",
+  "faq_a3": "Go to your Dashboard and click “Download PDF” next to the report you need."
 }

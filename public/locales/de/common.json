@@ -27,5 +27,13 @@
   "title": "Vin-Checker",
   "report_type_info": "Information",
   "report_type_decode": "Dekodieren",
-  "report_type_stolen": "Gestohlen"
+  "report_type_stolen": "Gestohlen",
+
+
+"faq_q1": "Wie erhalte ich einen VIN-Bericht?",
+  "faq_a1": "Geben Sie Ihre VIN auf der Startseite ein und klicken Sie auf „VIN prüfen“.",
+  "faq_q2": "Muss ich mich registrieren?",
+  "faq_a2": "Sie können einen Bericht ohne Registrierung erhalten, aber er wird nicht im Dashboard gespeichert.",
+  "faq_q3": "Wie lade ich einen zuvor erstellten Bericht herunter?",
+  "faq_a3": "Gehen Sie zu Ihrem Dashboard und klicken Sie neben dem gewünschten Bericht auf „PDF herunterladen“."
 }
