@@ -1,22 +1,30 @@
-
+// components/LanguageSwitcher.tsx
 'use client'
+
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function LanguageSwitcher() {
-  const router = useRouter()
-  const { locale, locales, asPath } = router
+  const { pathname, query } = useRouter()
+  // Не используем asPath и query для href, чтобы на сервере/клиенте было одинаково
+  const langs = [
+    { code: 'ru', label: 'RU' },
+    { code: 'en', label: 'EN' },
+    { code: 'de', label: 'DE' },
+  ]
 
   return (
-    <select
-      value={locale}
-      onChange={(e) => router.push(asPath, asPath, { locale: e.target.value })}
-      className="border px-2 py-1 rounded"
-    >
-      {locales?.map((loc) => (
-        <option key={loc} value={loc}>
-          {loc.toUpperCase()}
-        </option>
+    <div className="flex space-x-2">
+      {langs.map(({ code, label }) => (
+        <Link
+          key={code}
+          href={pathname}         // единственный неизменный маршрут
+          locale={code}           // переключаем язык
+          className="px-2 py-1 border rounded hover:bg-gray-200 text-sm"
+        >
+          {label}
+        </Link>
       ))}
-    </select>
+    </div>
   )
 }

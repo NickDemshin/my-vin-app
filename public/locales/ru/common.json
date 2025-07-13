@@ -1,9 +1,28 @@
 {
-  "title": "Проверка VIN",
-  "vin": "VIN",
-  "email": "Email",
-  "report_type": "Тип отчета",
-  "check_vin": "Проверить VIN",
+  "home": "Главная",
   "faq": "Часто задаваемые вопросы",
-  "home": "Главная"
+  "dashboard": "Личный кабинет",
+  "sign_in": "Вход",
+  "sign_up": "Регистрация",
+  "sign_out": "Выйти",
+  "no_account": "Нет аккаунта?",
+  "already_have_account": "Есть аккаунт?",
+  "check_vin": "Проверить VIN",
+  "download_report": "Скачать отчет",
+  "report_saved": "Отчёт добавлен в ваш личный кабинет.",
+  "please_register": "Чтобы сохранить отчёт, пожалуйста, зарегистрируйтесь.",
+  "signup": "Зарегистрируйтесь",
+  "invalid_vin": "VIN должен быть из 17 символов.",
+  "invalid_email": "Введите корректный e-mail.",
+  "check_email_error": "Не удалось проверить e-mail.",
+  "report_error": "Не удалось получить отчёт.",
+  "network_error": "Сетевая ошибка. Попробуйте позже.",
+  "loading": "Запрос…",
+  "title": "Vin-Checker",
+  "report_type_info": "Информация",
+  "report_type_decode": "Декодирование",
+  "report_type_stolen": "Розыск"
+ 
 }
+
+
