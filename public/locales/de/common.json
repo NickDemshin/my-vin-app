@@ -28,6 +28,12 @@
   "report_type_info": "Information",
   "report_type_decode": "Dekodieren",
   "report_type_stolen": "Gestohlen",
+  "password": "Passwort",
+  "confirm_password": "Passwort bestätigen",
+  "password_too_short": "Passwort zu kurz",
+  "password_mismatch": "Passwort stimmt nicht überein",
+  "registration_failed": "Ein Benutzer mit dieser E-Mail ist bereits registriert.",
+  "invalid_credentials": "Das Passwort oder die E-Mail ist falsch.",
 
 
 "faq_q1": "Wie erhalte ich einen VIN-Bericht?",

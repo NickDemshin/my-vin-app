@@ -28,6 +28,13 @@
   "report_type_info": "Information",
   "report_type_decode": "Decode",
   "report_type_stolen": "Stolen",
+  "password": "Password",
+  "confirm_password": "Confirm password",
+  "password_too_short": "Password too short",
+  "password_mismatch": "Password mismatch",
+  "registration_failed": "A user with this e-mail is already registered.",
+  "invalid_credentials": "The password or e-mail is incorrect.",
+
 
   "faq_q1": "How do I get a VIN report?",
   "faq_a1": "Enter your VIN on the home page and click “Check VIN.”",

@@ -28,6 +28,12 @@
   "report_type_info": "Информация",
   "report_type_decode": "Декодирование",
   "report_type_stolen": "Розыск",
+  "password": "Пароль",
+  "confirm_password": "Повторите пароль",
+  "password_too_short": "Пароль слишком короткий. Минимум 6 символов.",
+  "password_mismatch": "Пароль не совпадает.",
+  "registration_failed": "Пользователь с таким e-mail уже зарегистрирован.",
+  "invalid_credentials": "Пароль или e-mail неверны.",
 
   
   "faq_q1": "Как получить VIN-отчет?",
