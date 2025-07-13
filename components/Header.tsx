@@ -33,9 +33,7 @@ export default function Header() {
 
         {isClient && session?.user ? (
           <>
-            <Link href="/dashboard" className="text-blue-600 font-medium hover:underline">
-              {t('dashboard')}
-            </Link>
+            
             <button
               onClick={() => signOut({ callbackUrl: '/' })}
               className="text-red-500 hover:underline text-sm"
