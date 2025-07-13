@@ -22,6 +22,7 @@ model VinReport {
   type     String
   data     Json
   timestamp DateTime @default(now())
+  email     String
 
   users    UserVinReport[]
 }
