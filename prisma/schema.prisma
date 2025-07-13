@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id       String  @id @default(cuid())
+  email    String  @unique
+  password String
+  createdAt DateTime @default(now())
+
+  reports  UserVinReport[]
+}
+
+model VinReport {
+  id       String   @id @default(cuid())
+  vin      String
+  type     String
+  data     Json
+  timestamp DateTime @default(now())
+
+  users    UserVinReport[]
+}
+
+model UserVinReport {
+  userId    String
+  reportId  String
+
+  user      User     @relation(fields: [userId], references: [id])
+  report    VinReport @relation(fields: [reportId], references: [id])
+
+  @@id([userId, reportId])
+}
